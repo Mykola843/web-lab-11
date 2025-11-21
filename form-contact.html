@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма зворотного зв'язку - snadyan_swt</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#101018; color:#fff; }
+        .wrapper { width:600px; margin:20px auto; background:rgba(0,0,0,0.8); padding:20px; border-radius:8px; }
+        label { display:block; margin-top:10px; }
+        input[type="text"], input[type="email"], textarea, select {
+            width:100%; padding:6px; border-radius:4px; border:1px solid #555; margin-top:4px;
+        }
+        textarea { height:120px; }
+        .radio-group, .check-group { margin-top:8px; }
+        .btns { margin-top:15px; }
+        button { padding:6px 14px; border:none; border-radius:4px; cursor:pointer; }
+        .submit { background:#4CAF50; color:#fff; }
+        .reset { background:#777; color:#fff; }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h2>Форма зворотного зв'язку</h2>
+    <form action="#" method="post">
+        <label>Ваше ім'я*:
+            <input type="text" name="name" required>
+        </label>
+        <label>E-mail*:
+            <input type="email" name="email" required>
+        </label>
+        <label>Бажаний напрям розвитку*:
+            <select name="direction" required>
+                <option value="">Оберіть напрям</option>
+                <option value="driver">Дальнобійник</option>
+                <option value="cyber">Кібербезпека</option>
+                <option value="both">Поєднання двох напрямів</option>
+            </select>
+        </label>
+        <div class="radio-group">
+            <span>Форма зв'язку:</span><br>
+            <label><input type="radio" name="contact_type" value="email" checked> Лист на e-mail</label>
+            <label><input type="radio" name="contact_type" value="phone"> Дзвінок</label>
+        </div>
+        <div class="check-group">
+            <span>Що вас цікавить?</span><br>
+            <label><input type="checkbox" name="topic1"> Деталі роботи дальнобійника</label>
+            <label><input type="checkbox" name="topic2"> Курси з кібербезпеки</label>
+            <label><input type="checkbox" name="topic3"> Спільні проєкти</label>
+        </div>
+        <label>Повідомлення*:
+            <textarea name="message" required></textarea>
+        </label>
+        <div class="btns">
+            <button type="submit" class="submit">Надіслати</button>
+            <button type="reset" class="reset">Очистити</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

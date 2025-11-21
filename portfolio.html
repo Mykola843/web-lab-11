@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфоліо - snadyan_swt</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#101018; color:#fff; }
+        .wrapper { width:900px; margin:20px auto; background:rgba(0,0,0,0.7); padding:10px 20px 20px; border-radius:8px; }
+        table { width:100%; border-collapse:collapse; }
+        .header { background:#303030; color:#fff; }
+        .logo { font-size:24px; font-weight:bold; padding:10px; }
+        .menu ul { list-style:none; margin:0; padding:0; }
+        .menu li { display:inline-block; margin-right:10px; }
+        .menu a { color:#fff; text-decoration:none; padding:4px 8px; }
+        .menu a:hover { background:#5050aa; border-radius:4px; }
+        .main { padding:15px; }
+        .footer { background:#303030; color:#fff; padding:10px; }
+        .footer-title { font-weight:bold; }
+        .work-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:15px; }
+        .work { background:#202030; padding:10px; border-radius:6px; text-align:center; }
+        .work img { width:100%; max-height:180px; object-fit:cover; border-radius:4px; }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <table>
+        <tr class="header">
+            <td class="logo">snadyan_swt</td>
+            <td class="menu">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="rezume.html">Резюме</a></li>
+                    <li><a href="portfolio.html">Портфоліо</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="form-contact.html" target="_blank">Форма зворотного зв'язку</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="main">
+                <h2>Портфоліо</h2>
+                <p>Тут зібрані основні навчальні роботи з веб-розробки.</p>
+
+                <div class="work-grid">
+
+                    <div class="work">
+                        <h3>ЛР №1 — макет сторінки сайту у Figma</h3>
+                        <a href="#" target="_blank">
+                            <img src="C:/Users/Пользователь/OneDrive/Документы/лр9-10/img/figma_lr1.png" alt="Макет Figma">
+                        </a>
+                    </div>
+
+                    <div class="work">
+                        <h3>ЛР №7 — сайт про Мексику</h3>
+                        <a href="https://myfirstproject843.netlify.app/" target="_blank">
+                            <img src="img/mexico_lr7.png" alt="Сайт про Мексику">
+                        </a>
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="footer">
+                <div class="footer-title">Контакти</div>
+                <p>E-mail: example@mail.com</p>
+            </td>
+            <td class="footer">
+                <div class="footer-title">Адреса</div>
+                <p>м. Вінниця, Україна</p>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

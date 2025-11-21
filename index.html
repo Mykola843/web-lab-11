@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Персональна сторінка snadyan_swt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #101018;
+            color: #fff;
+        }
+        .wrapper {
+            width: 900px;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px 20px 20px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .header {
+            background: #303030;
+            color: #fff;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 4px 8px;
+        }
+        .menu a:hover {
+            background: #5050aa;
+            border-radius: 4px;
+        }
+        .main {
+            padding: 15px;
+        }
+        .flex-main {
+            display: flex;
+            gap: 10px;
+        }
+        .half {
+            flex: 1;
+            min-height: 260px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .half-left {
+            background-image: url("img/truck_bg.jpg"); /* замініть на своє зображення */
+        }
+        .half-right {
+            background-image: url("img/cyber_bg.jpg"); /* замініть на своє зображення */
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            height: 100%;
+        }
+        .half h2 {
+            margin-top: 0;
+        }
+        .photo-block {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .photo-block img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+        }
+        .footer {
+            background: #303030;
+            color: #fff;
+            padding: 10px;
+        }
+        .footer-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <table>
+        <tr class="header">
+            <td class="logo">
+                snadyan_swt
+            </td>
+            <td class="menu">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="rezume.html">Резюме</a></li>
+                    <li><a href="portfolio.html">Портфоліо</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="form-contact.html" target="_blank">Форма зворотного зв'язку</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="main">
+                <div class="photo-block">
+                    <img src="img/avatar.png" alt="Фото фахівця" title="snadyan_swt">
+                    <p>Персональний сайт майбутнього фахівця</p>
+                </div>
+                <div class="flex-main">
+                    <div class="half half-left">
+                        <div class="overlay">
+                            <h2>Дальнобійник</h2>
+                            <p>Професія, пов'язана з далекими подорожами, перевезенням вантажів та відповідальністю за їхню безпеку.</p>
+                            <ul>
+                                <li>Далекі маршрути Україною та Європою;</li>
+                                <li>Впевнене керування вантажним транспортом;</li>
+                                <li>Дотримання правил дорожнього руху та режиму праці й відпочинку.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="half half-right">
+                        <div class="overlay">
+                            <h2>Кібербезпека</h2>
+                            <p>Сучасний ІТ-напрям, що відповідає за захист інформації, мереж та систем від кібератак.</p>
+                            <ul>
+                                <li>Моніторинг безпеки мережі;</li>
+                                <li>Виявлення вразливостей та загроз;</li>
+                                <li>Розробка політик безпеки та рекомендацій для користувачів.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <div class="footer-title">Контактна інформація</div>
+                <p>Ім'я: Кондратюк Микола</p>
+                <p>E-mail: example@mail.com</p>
+            </td>
+            <td class="footer">
+                <div class="footer-title">Адреса</div>
+                <p>м. Вінниця, Україна</p>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
